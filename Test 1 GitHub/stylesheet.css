@@ -1,0 +1,16 @@
+@charset "UTF8";
+/*Transition eksempel */
+
+div {
+    width: 100px;                                                                /* Bredte på kassen */ 
+    height: 100px;                                                               /* Højden på kassen */ 
+    background-color: blue;                                                    /* Farven i kassen  */ 
+    transition-property: width;                                                  /* Det der ændrs fx kassens bredte her */ 
+    transition-duration: 10s;                                                   /* Hvor lang tid transktionen vare*/ 
+    transition-timing-function: cubic-bezier(.17,.67,.72,.23);                  /* Flowet i hvordan kassen bevægere sig - cubic-bezier.com */ 
+    transition-delay: 1s;                                                       /* Hvor lang tid skal vi vente før der sker noget */ 
+}
+
+div:hover {                                                                     /* Det som skal ændres og hvordan, her ændres div via hover */ 
+    width: 300px;                                                               /* Slutresultatet på transaktionen */ 
+}
